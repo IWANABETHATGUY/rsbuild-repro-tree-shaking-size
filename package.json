@@ -1,0 +1,21 @@
+{
+  "name": "rsbuild-repro-tree-shaking-size",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "packageManager": "pnpm@8.14.1",
+  "dependencies": {
+    "vant": "^4.8.2",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.3.2",
+    "@rsbuild/plugin-vue": "^0.3.2",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite": "^5.0.11"
+  }
+}
