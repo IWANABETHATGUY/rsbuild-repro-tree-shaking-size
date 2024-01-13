@@ -6,7 +6,7 @@ export default defineConfig({
   provider: webpackProvider,
   plugins: [pluginSwc()],
   tools: {
-    rspack: {
+    webpack: {
       optimization: {
         splitChunks: false,
       },
