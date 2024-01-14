@@ -5,6 +5,10 @@ export default defineConfig({
     rspack: {
       optimization: {
         splitChunks: false,
+				// mangleExports: false,
+				// concatenateModules: false,
+        // moduleIds: 'named',
+        // minimize: false,
       },
       experiments: {
         rspackFuture: {

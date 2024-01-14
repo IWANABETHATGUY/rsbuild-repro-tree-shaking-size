@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "build:webpack": "rsbuild build --config ./rsbuild.config.webpack.mjs",
     "build:vite": "vite build",
+    "build:webpack": "rsbuild build --config ./rsbuild.config.webpack.mjs",
+    "dev": "rsbuild dev --open",
     "preview": "rsbuild preview"
   },
   "packageManager": "pnpm@8.14.1",
@@ -20,6 +20,21 @@
     "@rsbuild/plugin-vue": "^0.3.2",
     "@rsbuild/webpack": "^0.3.2",
     "@vitejs/plugin-vue": "^5.0.3",
+    "terser-webpack-plugin": "^5.3.10",
     "vite": "^5.0.11"
+  },
+  "pnpm": {
+    "overrides": {
+      "@rspack-e2e/playground": "/home/victor/Documents/rspack/rspack/packages/playground",
+      "@rspack/cli": "/home/victor/Documents/rspack/rspack/packages/rspack-cli",
+      "@rspack/core": "/home/victor/Documents/rspack/rspack/packages/rspack",
+      "@rspack/dev-server": "/home/victor/Documents/rspack/rspack/packages/rspack-dev-server",
+      "@rspack/plugin-html": "/home/victor/Documents/rspack/rspack/packages/rspack-plugin-html",
+      "@rspack/plugin-minify": "/home/victor/Documents/rspack/rspack/packages/rspack-plugin-minify",
+      "@rspack/plugin-node-polyfill": "/home/victor/Documents/rspack/rspack/packages/rspack-plugin-node-polyfill",
+      "@rspack/plugin-react-refresh": "/home/victor/Documents/rspack/rspack/packages/rspack-plugin-react-refresh",
+      "@rspack/test-tools": "/home/victor/Documents/rspack/rspack/packages/rspack-test-tools",
+      "create-rspack": "/home/victor/Documents/rspack/rspack/packages/create-rspack"
+    }
   }
 }
